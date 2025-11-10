@@ -10,8 +10,8 @@ import Script from 'next/script'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Papikondalu Tours | Best Papikondalu Boat Tours | Papikondalu Hills Tourism',
-  description: 'Experience the best Papikondalu tours with India\'s #1 Papikondalu tourism operator. Premium Papikondalu boat tours, Papikondalu hills cruise, and authentic Papikondalu packages. Book your Papikondalu adventure today!',
+  title: 'Papikondalu Tours | Best Boat Tours',
+  description: 'Experience the best Papikondalu tours with India\'s #1 operator. Premium boat tours & authentic packages.',
   keywords: [
     'Papikondalu', 'Papikondalu tours', 'Papikondalu boat tours', 'Papikondalu hills', 'Papikondalu tourism',
     'best Papikondalu tours', 'Papikondalu packages', 'Papikondalu cruise', 'Papikondalu hills tourism',

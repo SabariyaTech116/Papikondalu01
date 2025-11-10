@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { MapPin, Star, Clock, Users } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'East Godavari Tourism | Best Tourist Places in East Godavari | Complete Tour Guide',
-  description: 'Discover the best tourist places in East Godavari with complete tourism guide. Explore Papikondalu, Badrachalam, Maredumilli, Rajahmundry tours. Book East Godavari tour packages now!',
+  title: 'East Godavari Tourism | Best Tourist Places',
+  description: 'Discover the best tourist places in East Godavari. Explore Papikondalu, Badrachalam & Maredumilli tours.',
   keywords: [
     'East Godavari tourism', 'best tourist places in East Godavari', 'East Godavari tour packages', 'East Godavari attractions',
     'Godavari district tourism', 'Andhra Pradesh tourism', 'East Godavari sightseeing', 'tourist destinations East Godavari'

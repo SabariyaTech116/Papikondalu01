@@ -7,6 +7,11 @@ import { LazyMultiAgentWidget } from './components/LazyComponents'
 import WebVitals from './components/WebVitals'
 import ImagePreloader from './components/ImagePreloader'
 import PerformanceOptimizer from './components/PerformanceOptimizer'
+import MobileOptimizer from './components/MobileOptimizer'
+import CriticalPerformance from './components/CriticalPerformance'
+import ViewportOptimizer from './components/ViewportOptimizer'
+import SEOEnhancer from './components/SEOEnhancer'
+import ContentOptimizer from './components/ContentOptimizer'
 import Script from 'next/script'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -20,7 +25,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://bhadradripapikondalu.com'),
   title: {
-    default: 'Papikondalu Tours | Best Papikondalu Tourism | #1 Papikondalu Operator',
+    default: 'Papikondalu Tours | Best Tourism Operator',
     template: '%s | Papikondalu Tourism'
   },
   icons: {
@@ -28,7 +33,7 @@ export const metadata: Metadata = {
     shortcut: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
     apple: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
   },
-  description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years. Reserve your ultimate tour today!',
+  description: 'Book top-rated Papikondalu tours with India\'s #1 operator. Explore Bhadradri temples & adventure packages.',
   keywords: [
     'Papikondalu', 'Papikondalu tours', 'Papikondalu boat tours', 'Papikondalu hills', 'Papikondalu tourism',
     'best Papikondalu tours', 'Papikondalu packages', 'Papikondalu cruise', 'Papikondalu hills tourism', 'Papikondalu operator',
@@ -52,8 +57,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://bhadradripapikondalu.com',
     siteName: 'Papikondalu Tourism - Best River Cruise Experience',
-    title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
-    description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years.',
+    title: 'Papikondalu Tours | Bhadradri Temple Tours',
+    description: 'Book top-rated Papikondalu tours with India\'s #1 operator. Explore Bhadradri temples & adventure packages.',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,
@@ -66,8 +71,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@papikondalutourism',
     creator: '@papikondalutourism',
-    title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
-    description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years.',
+    title: 'Papikondalu Tours | Bhadradri Temple Tours',
+    description: 'Book top-rated Papikondalu tours with India\'s #1 operator. Explore Bhadradri temples & adventure packages.',
     images: ['https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg'],
   },
   robots: {
@@ -178,7 +183,8 @@ export default function RootLayout({
         'sameAs': [
           'https://www.facebook.com/papikondalutourism',
           'https://www.instagram.com/papikondalutourism',
-          'https://www.youtube.com/papikondalutourism'
+          'https://www.youtube.com/papikondalutourism',
+          'https://twitter.com/papikondalutourism'
         ]
       },
       {
@@ -266,11 +272,9 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://djmcbqzqt.cloudinary.com" />
 
-
         <link rel="canonical" href="https://bhadradripapikondalu.com" />
         <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="en" />
         <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="x-default" />
-
 
         <meta name="msapplication-TileColor" content="#0f172a" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -278,13 +282,17 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="font-sans antialiased">
-
+        <SEOEnhancer />
+        <ViewportOptimizer />
+        <CriticalPerformance />
+        <MobileOptimizer />
         <WebVitals />
         <ImagePreloader />
         <PerformanceOptimizer />
         <Header />
         <FloatingActionButton />
         <main className="relative" role="main">{children}</main>
+        <ContentOptimizer />
         <Footer />
         <LazyMultiAgentWidget />
         <SpeedInsights />
