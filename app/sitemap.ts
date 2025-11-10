@@ -35,11 +35,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog pages (placeholder for future blog posts)
   const blogPages: any[] = []
 
-  // SEO landing pages
+  // SEO landing pages - Papikondalu focused
   const seoLandingPages = [
-    { url: `${baseUrl}/papikondalu-tours`, priority: 0.95, changeFrequency: 'daily' as const },
-    { url: `${baseUrl}/badrachalam-temple-tours`, priority: 0.9, changeFrequency: 'daily' as const },
-    { url: `${baseUrl}/east-godavari-tourism`, priority: 0.95, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/papikondalu-tours`, priority: 1.0, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/badrachalam-temple-tours`, priority: 0.85, changeFrequency: 'weekly' as const },
+    { url: `${baseUrl}/east-godavari-tourism`, priority: 0.8, changeFrequency: 'weekly' as const },
   ]
 
   const allPages = [

@@ -75,10 +75,10 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="text-2xl md:text-4xl font-bold text-white leading-tight">
-              Papikondalu Tours, Bhadradri Temple, East Godavari & Maredumalli Tourism Packages
+              Best <span className="text-yellow-400">Papikondalu Tours</span> | #1 Papikondalu Tourism Operator
               <span className="block">
                 <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
-                  East Godavari Tourism
+                  Premium Papikondalu Hills Experience
                 </span>
               </span>
             </h1>
@@ -155,10 +155,10 @@ const Hero = () => {
               </div>
               
               <h1 className="text-2xl md:text-4xl font-bold text-white leading-tight">
-                Best Boat Tours Papikondalu
+                Best Papikondalu Tours | #1 Papikondalu Tourism
                 <span className="block">
                   <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
-                    Godavari River Cruise
+                    Premium Papikondalu Hills Experience
                   </span>
                 </span>
               </h1>

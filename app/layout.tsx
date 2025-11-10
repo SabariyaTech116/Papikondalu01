@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://bhadradripapikondalu.com'),
   title: {
-    default: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
+    default: 'Papikondalu Tours | Best Papikondalu Tourism | #1 Papikondalu Operator',
     template: '%s | Papikondalu Tourism'
   },
   icons: {
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   },
   description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years. Reserve your ultimate tour today!',
   keywords: [
-    'Papikondalu tours', 'Badrachalam temple tours', 'East Godavari tourism', 'Rajahmundry tours', 'Maredumilli tours', 'Rampachodavaram tours',
-    'best tourist places in East Godavari', 'Papikondalu boat tours', 'Godavari river cruise', 'Badrachalam tour packages',
-    'East Godavari tour packages', 'Rajahmundry boat tours', 'Maredumilli waterfalls', 'Rampachodavaram adventure tours',
-    'Papikondalu tourism', 'Bhadradri Kothagudem tours', 'Andhra Pradesh tourism', 'Eastern Ghats tours',
-    'weekend getaways East Godavari', 'family tour packages', 'adventure tourism Andhra Pradesh', 'eco tourism packages',
-    'temple tourism Andhra Pradesh', 'river cruise India', 'forest tours Andhra Pradesh', 'tribal tourism packages'
+    'Papikondalu', 'Papikondalu tours', 'Papikondalu boat tours', 'Papikondalu hills', 'Papikondalu tourism',
+    'best Papikondalu tours', 'Papikondalu packages', 'Papikondalu cruise', 'Papikondalu hills tourism', 'Papikondalu operator',
+    'Papikondalu river cruise', 'Papikondalu boat ride', 'Papikondalu Godavari', 'Papikondalu Andhra Pradesh', 'Papikondalu booking',
+    'Papikondalu Rajahmundry', 'Papikondalu travel', 'Papikondalu adventure', 'Papikondalu experience', 'Papikondalu destination',
+    'Papikondalu scenic', 'Papikondalu nature', 'Papikondalu family tours', 'Papikondalu honeymoon', 'Papikondalu weekend',
+    'Papikondalu day tour', 'Papikondalu overnight', 'Papikondalu premium', 'Papikondalu luxury', 'Papikondalu budget'
   ],
   authors: [{ name: 'Papikondalu Tourism', url: 'https://bhadradripapikondalu.com' }],
   creator: 'Papikondalu Tourism',
@@ -133,8 +133,8 @@ export default function RootLayout({
         '@type': 'TravelAgency',
         '@id': 'https://bhadradripapikondalu.com/#organization',
         'name': 'Papikondalu Tourism',
-        'alternateName': 'Papikondalu River Tourism',
-        'description': 'Leading river tourism company with 20+ years of experience serving 7+ lakh customers',
+        'alternateName': 'Best Papikondalu Tours Operator',
+        'description': 'India\'s #1 Papikondalu tourism company with 20+ years of experience in Papikondalu tours serving 7+ lakh customers',
         'url': 'https://bhadradripapikondalu.com',
         'logo': {
           '@type': 'ImageObject',
@@ -163,7 +163,7 @@ export default function RootLayout({
           '@type': 'State',
           'name': 'Andhra Pradesh'
         },
-        'serviceType': ['River Tourism', 'Boat Tours', 'Temple Tours', 'Adventure Packages'],
+        'serviceType': ['Papikondalu Tours', 'Papikondalu Boat Tours', 'Papikondalu Tourism', 'Papikondalu Packages'],
         'aggregateRating': {
           '@type': 'AggregateRating',
           'ratingValue': '4.8',
@@ -184,8 +184,8 @@ export default function RootLayout({
       {
         '@type': 'TouristAttraction',
         '@id': 'https://bhadradripapikondalu.com/#attraction',
-        'name': 'Papikondalu Hills',
-        'description': 'Scenic hills along the Godavari River offering breathtaking boat tours and temple visits',
+        'name': 'Papikondalu Hills Tourism',
+        'description': 'Best Papikondalu tours destination offering premium Papikondalu boat tours and authentic Papikondalu experiences along the scenic Godavari River',
         'url': 'https://bhadradripapikondalu.com/attractions/papikondalu-hills',
         'image': {
           '@type': 'ImageObject',
@@ -211,8 +211,8 @@ export default function RootLayout({
         '@type': 'WebSite',
         '@id': 'https://bhadradripapikondalu.com/#website',
         'url': 'https://bhadradripapikondalu.com',
-        'name': 'Papikondalu Tourism',
-        'description': 'Best boat tours and river cruise experiences in Papikondalu Hills',
+        'name': 'Best Papikondalu Tours | Papikondalu Tourism',
+        'description': 'India\'s #1 Papikondalu tourism website offering the best Papikondalu tours, Papikondalu boat tours, and premium Papikondalu packages',
         'publisher': {
           '@id': 'https://bhadradripapikondalu.com/#organization'
         },

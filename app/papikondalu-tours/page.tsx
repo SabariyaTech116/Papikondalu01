@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { MapPin, Star, Clock, Users, Phone, Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Best Papikondalu Tours | Papikondalu Boat Tours | Godavari River Cruise',
-  description: 'Experience the best Papikondalu tours with premium boat rides, scenic views, and cultural experiences. Book Papikondalu tour packages from Rajahmundry & Badrachalam. 20+ years expertise.',
+  title: 'Papikondalu Tours | Best Papikondalu Tourism | #1 Papikondalu Operator',
+  description: 'Experience the best Papikondalu tours with India\'s #1 Papikondalu tourism operator. Premium Papikondalu boat tours, Papikondalu hills cruise, and authentic Papikondalu packages. Book your Papikondalu adventure today!',
   keywords: [
-    'Papikondalu tours', 'Papikondalu boat tours', 'Papikondalu tour packages', 'Godavari river cruise',
-    'Rajahmundry to Papikondalu', 'Badrachalam to Papikondalu', 'Papikondalu hills', 'best Papikondalu tours',
-    'Papikondalu tourism', 'Papikondalu boat booking', 'Papikondalu day tours', 'Papikondalu overnight tours'
+    'Papikondalu', 'Papikondalu tours', 'Papikondalu boat tours', 'Papikondalu tourism', 'best Papikondalu tours',
+    'Papikondalu hills', 'Papikondalu packages', 'Papikondalu cruise', 'Papikondalu operator', 'Papikondalu booking',
+    'Papikondalu Rajahmundry', 'Papikondalu Godavari', 'Papikondalu Andhra Pradesh', 'Papikondalu experience'
   ]
 }
 

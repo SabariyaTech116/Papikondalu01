@@ -3,19 +3,20 @@ import FeaturedAttractions from './components/FeaturedAttractions'
 import PackageShowcase from './components/PackageShowcase'
 import SEOContent from './components/SEOContent'
 import SEOBoostContent from './components/SEOBoostContent'
+import PapikondaluSEO from './components/PapikondaluSEO'
 import { LazyTestimonials, LazyNewsletter } from './components/LazyComponents'
 import CriticalCSS from './components/CriticalCSS'
 import Script from 'next/script'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Papikondalu | Maredumilli | Bhadrachalam | East Godavari Tourism | Gudisa | Rampa Waterfalls',
-  description: 'Papikondalu tours, Maredumilli waterfalls, Bhadrachalam temple visits, East Godavari tourism, Gudisa hills, and Rampa waterfalls. Book authentic experiences with local experts. Best rates guaranteed!',
+  title: 'Papikondalu Tours | Best Papikondalu Boat Tours | Papikondalu Hills Tourism',
+  description: 'Experience the best Papikondalu tours with India\'s #1 Papikondalu tourism operator. Premium Papikondalu boat tours, Papikondalu hills cruise, and authentic Papikondalu packages. Book your Papikondalu adventure today!',
   keywords: [
-    'Papikondalu', 'Maredumilli', 'Bhadrachalam', 'East Godavari tourism', 'Gudisa', 'Rampa waterfalls',
-    'Papikondalu tours', 'Maredumilli waterfalls', 'Bhadrachalam temple', 'East Godavari', 'Gudisa hills',
-    'Rampachodavaram', 'Godavari river cruise', 'Andhra Pradesh tourism', 'Papikondalu hills',
-    'Bhadradri temple', 'Maredumilli forest', 'East Godavari attractions', 'Gudisa trekking'
+    'Papikondalu', 'Papikondalu tours', 'Papikondalu boat tours', 'Papikondalu hills', 'Papikondalu tourism',
+    'best Papikondalu tours', 'Papikondalu packages', 'Papikondalu cruise', 'Papikondalu hills tourism',
+    'Papikondalu river cruise', 'Papikondalu boat ride', 'Papikondalu Godavari', 'Papikondalu Andhra Pradesh',
+    'Papikondalu Rajahmundry', 'Papikondalu booking', 'Papikondalu travel', 'Papikondalu adventure'
   ],
   openGraph: {
     title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
@@ -35,14 +36,14 @@ export default function Home() {
     '@type': 'WebPage',
     '@id': 'https://bhadradripapikondalu.com/#webpage',
     'url': 'https://bhadradripapikondalu.com',
-    'name': 'Papikondalu Tourism - Best Boat Tours in Andhra Pradesh',
+    'name': 'Best Papikondalu Tours | #1 Papikondalu Tourism Operator',
     'isPartOf': {
       '@id': 'https://bhadradripapikondalu.com/#website'
     },
     'about': {
       '@id': 'https://bhadradripapikondalu.com/#organization'
     },
-    'description': 'Experience Papikondalu Hills with India\'s #1 river tourism company. Premium boat tours, temple visits & adventure packages.',
+    'description': 'Experience the best Papikondalu tours with India\'s #1 Papikondalu tourism operator. Premium Papikondalu boat tours, Papikondalu hills cruise, and authentic Papikondalu packages.',
     'breadcrumb': {
       '@id': 'https://bhadradripapikondalu.com/#breadcrumb'
     },
@@ -64,6 +65,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageStructuredData) }}
       />
       <Hero />
+      <PapikondaluSEO />
       <FeaturedAttractions />
       <SEOBoostContent />
       <SEOContent />
