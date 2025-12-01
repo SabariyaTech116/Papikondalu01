@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 import { attractionSlugs, packageSlugs } from './utils/slugs'
+import { attractionsData } from './attractions/attractionsData'
+import { packagesData } from './packages/packagesData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://bhadradripapikondalu.com'
@@ -17,21 +19,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/terms`, priority: 0.3, changeFrequency: 'yearly' as const },
   ]
 
-  // All attraction pages
-  const attractionPages = Object.values(attractionSlugs).map(slug => ({
-    url: `${baseUrl}/attractions/${slug}`,
-    lastModified: currentDate,
-    changeFrequency: 'weekly' as const,
-    priority: 0.85,
-  }))
+  // All attraction pages with images
+  const attractionPages = attractionsData.map(attraction => {
+    const slug = attractionSlugs[attraction.id as keyof typeof attractionSlugs]
+    return {
+      url: `${baseUrl}/attractions/${slug}`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+      images: [attraction.image, ...(attraction.gallery || [])].slice(0, 5), // Limit to 5 images per page
+    }
+  })
 
-  // All package pages
-  const packagePages = Object.values(packageSlugs).map(slug => ({
-    url: `${baseUrl}/packages/${slug}`,
-    lastModified: currentDate,
-    changeFrequency: 'weekly' as const,
-    priority: 0.85,
-  }))
+  // All package pages with images
+  const packagePages = packagesData.map(pkg => {
+    const slug = packageSlugs[pkg.id as keyof typeof packageSlugs]
+    return {
+      url: `${baseUrl}/packages/${slug}`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+      images: [pkg.image, ...(pkg.gallery || [])].slice(0, 5),
+    }
+  })
 
   // Blog pages
   const blogPages = [
