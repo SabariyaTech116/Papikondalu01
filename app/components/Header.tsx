@@ -54,11 +54,10 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-medium' 
+      <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-medium'
           : 'bg-white shadow-soft'
-      }`}>
+        }`}>
         <div className="max-w-7xl mx-auto container-padding">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -134,7 +133,7 @@ const Header = () => {
                       key={item.href}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
+                      transition={{ delay: index * 0.05 }}
                     >
                       <Link
                         href={item.href}
@@ -149,7 +148,7 @@ const Header = () => {
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: navItems.length * 0.1 }}
+                    transition={{ delay: navItems.length * 0.05 }}
                     className="pt-4 border-t border-neutral-200"
                   >
                     <Link

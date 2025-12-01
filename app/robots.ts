@@ -22,8 +22,7 @@ export default function robots(): MetadataRoute.Robots {
       }
     ],
     sitemap: [
-      'https://bhadradripapikondalu.com/sitemap.xml',
-      'https://bhadradripapikondalu.com/sitemap-images.xml'
+      'https://bhadradripapikondalu.com/sitemap.xml'
     ],
     host: 'https://bhadradripapikondalu.com',
   }

@@ -78,7 +78,7 @@ const Testimonials = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -90,7 +90,7 @@ const Testimonials = () => {
             What Our <span className="gradient-text">Customers Say</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Join thousands of satisfied customers who have experienced the best boat tours Papikondalu adventures 
+            Join thousands of satisfied customers who have experienced the best boat tours Papikondalu adventures
             with our award-winning Godavari river cruise services and premium tour packages
           </p>
         </motion.div>
@@ -102,7 +102,7 @@ const Testimonials = () => {
               key={testimonial.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
               viewport={{ once: true }}
               className="card-elevated p-8 relative hover-lift"
             >
@@ -112,7 +112,7 @@ const Testimonials = () => {
                   <Quote className="text-white" size={20} />
                 </div>
               </div>
-              
+
               {/* Rating */}
               <div className="flex items-center mb-6 mt-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -156,7 +156,7 @@ const Testimonials = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           viewport={{ once: true }}
           className="bg-gradient-to-r from-white via-gray-50 to-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100"
         >
@@ -164,7 +164,7 @@ const Testimonials = () => {
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h3>
             <p className="text-xl text-gray-600">Excellence that speaks through numbers</p>
           </div>
-          
+
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => {
               const Icon = stat.icon
@@ -173,7 +173,7 @@ const Testimonials = () => {
                   key={stat.label}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+                  transition={{ duration: 0.3, delay: 0.2 + index * 0.05 }}
                   viewport={{ once: true }}
                   className="text-center group"
                 >

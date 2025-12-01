@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import { attractionsData } from '../attractionsData'
 import AttractionDetailClient from './AttractionDetailClient'
 import { notFound } from 'next/navigation'
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params
   const attractionId = getAttractionIdFromSlug(id)
   const attraction = attractionsData.find(a => a.id === attractionId)
-  
+
   if (!attraction) {
     return {
       title: 'Attraction Not Found | Papikondalu Tourism',
@@ -38,16 +39,45 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 export default async function AttractionDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const attractionId = getAttractionIdFromSlug(id)
-  
+
   if (!attractionId) {
     notFound()
   }
-  
+
   const attraction = attractionsData.find(a => a.id === attractionId)
-  
+
   if (!attraction) {
     notFound()
   }
 
-  return <AttractionDetailClient attraction={attraction} />
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TouristAttraction',
+    'name': attraction.name,
+    'description': attraction.description,
+    'url': `https://bhadradripapikondalu.com/attractions/${id}`,
+    'image': attraction.image,
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 17.0005,
+      'longitude': 81.8040
+    },
+    'address': {
+      '@type': 'PostalAddress',
+      'addressLocality': 'East Godavari',
+      'addressRegion': 'Andhra Pradesh',
+      'addressCountry': 'IN'
+    }
+  }
+
+  return (
+    <>
+      <Script
+        id={`attraction-schema-${attraction.id}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <AttractionDetailClient attraction={attraction} />
+    </>
+  )
 }

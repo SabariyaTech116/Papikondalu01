@@ -63,7 +63,7 @@ export default function ContentOptimizer() {
           </section>
         </article>
       `
-      
+
       // Append to body
       document.body.appendChild(seoContent)
 
@@ -73,12 +73,12 @@ export default function ContentOptimizer() {
         if (!section.getAttribute('itemscope')) {
           section.setAttribute('itemscope', '')
           section.setAttribute('itemtype', 'https://schema.org/Article')
-          
+
           const heading = section.querySelector('h1, h2, h3')
           if (heading && !heading.getAttribute('itemprop')) {
             heading.setAttribute('itemprop', 'headline')
           }
-          
+
           const paragraphs = section.querySelectorAll('p')
           paragraphs.forEach(p => {
             if (!p.getAttribute('itemprop')) {

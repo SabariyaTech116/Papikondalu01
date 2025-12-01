@@ -1,194 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home/Landing Page -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Main Pages -->
   <url>
     <loc>https://bhadradripapikondalu.com</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Main Pages -->
   <url>
     <loc>https://bhadradripapikondalu.com/aboutus</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/aboutus/blog</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://bhadradripapikondalu.com/attractions</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://bhadradripapikondalu.com/packages</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://bhadradripapikondalu.com/gallery</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bhadradripapikondalu.com/contact</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/privacy</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/terms</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
   <!-- SEO Landing Pages -->
   <url>
     <loc>https://bhadradripapikondalu.com/papikondalu-tours</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bhadradripapikondalu.com/badrachalam-temple-tours</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://bhadradripapikondalu.com/east-godavari-tourism</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Individual Attraction Pages -->
+  <!-- Attraction Pages -->
   <url>
-    <loc>https://bhadradripapikondalu.com/attractions/papi-hills</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bhadradripapikondalu.com/attractions/bhadrachalam-temple</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/attractions/papikondalu</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://bhadradripapikondalu.com/attractions/perantalapalli</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978650/perantalapalli_ansers.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/attractions/kolluru-bamboo-huts</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/attractions/gandipochamma-temple</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978109/gandi_pza3wk.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/attractions/gandi-pochamma-temple</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/attractions/bhadrachalam</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980907/Bhadrachalam_Temple_yg8met.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/attractions/sabari-temple</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/attractions/sirivaka-night-stay-camping</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/attractions/maredumilli</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978648/maredumilli_lqndyb.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://bhadradripapikondalu.com/attractions/parnasala</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1755979312/dev_parnasala_pfvan7.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/attractions/rampa-waterfalls</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/attractions/gudisa</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755981754/Camping_in_Mountains_ytwmvi.avif</image:loc>
+    </image:image>
   </url>
 
-  <!-- Individual Package Pages -->
+  <!-- Package Pages -->
   <url>
-    <loc>https://bhadradripapikondalu.com/packages/day-cruise</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bhadradripapikondalu.com/packages/overnight-package</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/packages/papikondalu-pakages</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/packages/temple-tour</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/packages/bhadradrachalam-papikondalu-pakages</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003757/rajamundry_v2aufm.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/packages/adventure-package</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bhadradripapikondalu.com/packages/family-package</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/packages/maredumilli-pakages</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/packages/honeymoon-package</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bhadradripapikondalu.com/packages/group-package</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bhadradripapikondalu.com/packages/premium-package</loc>
-    <lastmod>2024-01-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://bhadradripapikondalu.com/packages/budget-package</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://bhadradripapikondalu.com/packages/rampachodavaram-waterfalls-tour-package</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980907/Bhadrachalam_Temple_yg8met.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/packages/rajahmundry-papikondalu-pakages</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/packages/sirivaka-night-stay-package</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/packages/parnasala-pakages</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755978851/MAREDUMILLI_-_waterfalls_kmuppt.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/packages/gudisa-packages</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1755979312/dev_parnasala_pfvan7.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bhadradripapikondalu.com/packages/perantalapalli-packages</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755981754/Camping_in_Mountains_ytwmvi.avif</image:loc>
+    </image:image>
   </url>
 
   <!-- Blog Pages -->
   <url>
-    <loc>https://bhadradripapikondalu.com/aboutus/blog/godavari-river-cruise-complete-guide</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://bhadradripapikondalu.com/blog</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://bhadradripapikondalu.com/aboutus/blog/papikondalu-hills-hidden-gems</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bhadradripapikondalu.com/aboutus/blog/andhra-pradesh-river-tourism-evolution</loc>
-    <lastmod>2024-01-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://bhadradripapikondalu.com/blog/papikondalu-bhadradri-magical-beauty</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
