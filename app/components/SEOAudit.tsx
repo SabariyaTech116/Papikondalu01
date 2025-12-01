@@ -15,7 +15,7 @@ export default function SEOAudit() {
           img.setAttribute('alt', `Papikondalu Tourism image ${index + 1}`)
         }
       })
-      
+
       // Add missing heading structure
       const sections = document.querySelectorAll('section:not(:has(h1, h2, h3, h4, h5, h6))')
       sections.forEach((section, index) => {
@@ -24,7 +24,7 @@ export default function SEOAudit() {
         heading.textContent = `Section ${index + 1}`
         section.insertBefore(heading, section.firstChild)
       })
-      
+
       // Add missing meta descriptions for dynamic content
       if (!document.querySelector('meta[name="description"]')) {
         const meta = document.createElement('meta')
@@ -32,7 +32,7 @@ export default function SEOAudit() {
         meta.content = 'Papikondalu Tourism - Best boat tours and river cruises in Andhra Pradesh'
         document.head.appendChild(meta)
       }
-      
+
       // Add missing viewport meta if not present
       if (!document.querySelector('meta[name="viewport"]')) {
         const viewport = document.createElement('meta')
@@ -40,13 +40,13 @@ export default function SEOAudit() {
         viewport.content = 'width=device-width, initial-scale=1'
         document.head.appendChild(viewport)
       }
-      
+
       // Add language attribute to html element
       const html = document.documentElement
       if (!html.getAttribute('lang')) {
         html.setAttribute('lang', 'en')
       }
-      
+
       // Add skip navigation link for accessibility
       if (!document.querySelector('.skip-nav')) {
         const skipNav = document.createElement('a')
@@ -55,13 +55,13 @@ export default function SEOAudit() {
         skipNav.textContent = 'Skip to main content'
         document.body.insertBefore(skipNav, document.body.firstChild)
       }
-      
+
       // Add main content id if not present
       const main = document.querySelector('main')
       if (main && !main.getAttribute('id')) {
         main.setAttribute('id', 'main-content')
       }
-      
+
       // Optimize images for better loading
       const lazyImages = document.querySelectorAll('img[loading="lazy"]')
       lazyImages.forEach(img => {
@@ -69,7 +69,7 @@ export default function SEOAudit() {
           img.setAttribute('decoding', 'async')
         }
       })
-      
+
       // Add proper ARIA labels where missing
       const buttons = document.querySelectorAll('button:not([aria-label]):not(:has(span, div))')
       buttons.forEach((button, index) => {
@@ -77,13 +77,13 @@ export default function SEOAudit() {
           button.setAttribute('aria-label', `Action button ${index + 1}`)
         }
       })
-      
+
       // Add proper roles where needed
       const navs = document.querySelectorAll('nav:not([role])')
       navs.forEach(nav => {
         nav.setAttribute('role', 'navigation')
       })
-      
+
       // Ensure all links have proper attributes
       const externalLinks = document.querySelectorAll('a[href^="http"]:not([href^="https://bhadradripapikondalu.com"])')
       externalLinks.forEach(link => {
@@ -95,22 +95,22 @@ export default function SEOAudit() {
         }
       })
     }
-    
+
     // Run audit after DOM is fully loaded
     setTimeout(runSEOAudit, 1000)
-    
+
     // Re-run on route changes
     const observer = new MutationObserver(() => {
       setTimeout(runSEOAudit, 500)
     })
-    
+
     observer.observe(document.body, {
       childList: true,
       subtree: true
     })
-    
+
     return () => observer.disconnect()
   }, [])
-  
+
   return null
 }

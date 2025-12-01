@@ -61,7 +61,7 @@ const PackageShowcase = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -73,7 +73,7 @@ const PackageShowcase = () => {
             Popular <span className="gradient-text">Tour Packages</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Choose from our best boat tours Papikondalu packages. Experience premium Godavari river cruise adventures 
+            Choose from our best boat tours Papikondalu packages. Experience premium Godavari river cruise adventures
             designed to give you the most unforgettable best boat tours Papikondalu experience with expert guides
           </p>
         </motion.div>
@@ -84,7 +84,7 @@ const PackageShowcase = () => {
               key={pkg.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.05 }}
               viewport={{ once: true }}
               className="card-elevated overflow-hidden group hover-glow relative"
             >
@@ -108,7 +108,7 @@ const PackageShowcase = () => {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                
+
                 {/* Rating */}
                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 flex items-center">
                   <Star className="w-4 h-4 text-secondary-500 fill-current mr-1" />
@@ -116,16 +116,16 @@ const PackageShowcase = () => {
                   <span className="text-xs text-neutral-600 ml-1">({pkg.reviews})</span>
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="heading-sm mb-4 group-hover:text-primary-600 transition-colors">
                   {pkg.name}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                   {pkg.description}
                 </p>
-                
+
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="flex items-center text-neutral-600">
                     <Users size={16} className="mr-2 text-primary-500" />
@@ -157,7 +157,7 @@ const PackageShowcase = () => {
                   </div>
                 </div>
 
-                <Link 
+                <Link
                   href={`/packages/${getPackageSlug(pkg.id)}`}
                   className="w-full btn-primary text-center group/btn"
                 >
@@ -172,7 +172,7 @@ const PackageShowcase = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           viewport={{ once: true }}
           className="text-center mt-16"
         >
